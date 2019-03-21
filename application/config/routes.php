@@ -1,6 +1,6 @@
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 /*
 | -------------------------------------------------------------------------
 | URI ROUTING
@@ -52,3 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'PostagemController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['postagem-visualizar/(:num)'] = "PostagemController/visualizar/$1";
+$route['postagem-index'] = "PostagemController/index.php";
+$route['postagem-index'] = "PostagemController/novo";
